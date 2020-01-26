@@ -1,14 +1,73 @@
+<!--
+
+#ACTIVIDAD 1: Aplicación Caso I
+
+          El toast es una clase que tiene como función visualizar mensajes sobrepuestos a la ventana
+          en un determinado período de tiempo, pero sin detener la aplicación. Se debe tener en cuenta
+          que este mensaje no permite interactuar con el usuario, es decir, no se pueden ingresar datos,
+          seleccionar botones ni obligar a que se cierre.</p>
+
+
+          Un toast también es un mensaje en un pequeño pop-up, cuyo tamaño no excede el
+          contenido del mensaje. Este tipo de mensajes son muy útiles cuando se quiere mostrar cualquier
+          mensaje informativo, donde no se necesita la interacción del usuario. Por ejemplo, si se guardan
+          los datos de un usuario en la base de datos de una aplicación, se podría mostrar el mensaje
+          “Usuario guardado correctamente” en un toast.
+
+
+Angular 6.0
+Ionic 4.12
+Emulador : Nexus 6 / Android 9 Pie
+
+
+
+-->
+
+
+
+
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar class="background-color-title">
     <ion-title>
-      Ionic Blank
+      ACTIVIDAD 1: Aplicación Caso I
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+    <h5>Toast</h5>
+    <hr>
+    <ion-button expand="full" color="medium" (click)="mostrarToast()">Toast</ion-button>
+
+    <h5>Toast con Opciones</h5>
+    <ion-button expand="full" color="dark" (click)="mostrarToastConOpciones()">Toast Opciones</ion-button>
+    <hr>
+
+
+    <ion-card>
+      <ion-card-header>
+        <ion-card-subtitle>Toast</ion-card-subtitle>
+        <ion-card-title>Ion Toast</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        <p>El toast es una clase que tiene como función visualizar mensajes sobrepuestos a la ventana
+          en un determinado período de tiempo, pero sin detener la aplicación. Se debe tener en cuenta
+          que este mensaje no permite interactuar con el usuario, es decir, no se pueden ingresar datos,
+          seleccionar botones ni obligar a que se cierre.</p>
+
+        <p>
+          Un toast también es un mensaje en un pequeño pop-up, cuyo tamaño no excede el
+          contenido del mensaje. Este tipo de mensajes son muy útiles cuando se quiere mostrar cualquier
+          mensaje informativo, donde no se necesita la interacción del usuario. Por ejemplo, si se guardan
+          los datos de un usuario en la base de datos de una aplicación, se podría mostrar el mensaje
+          “Usuario guardado correctamente” en un toast.
+        </p>
+
+      </ion-card-content>
+    </ion-card>
+
+
   </div>
 </ion-content>
